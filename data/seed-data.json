@@ -1,0 +1,40 @@
+{
+  "items": [
+    { "id": "1", "name": "Organic Coffee Beans", "quantity": 5, "expiryDate": "2026-05-03", "category": "Beverages", "location": "Pantry Shelf A", "minThreshold": 2, "maxThreshold": 10, "unit": "bags", "createdAt": "2026-02-17", "updatedAt": "2026-03-17" },
+    { "id": "2", "name": "Almond Milk", "quantity": 3, "expiryDate": "2026-03-24", "category": "Dairy Alternatives", "location": "Fridge 2", "minThreshold": 2, "maxThreshold": 6, "unit": "cartons", "createdAt": "2026-03-05", "updatedAt": "2026-03-18" },
+    { "id": "3", "name": "Fresh Spinach", "quantity": 2, "expiryDate": "2026-03-21", "category": "Vegetables", "location": "Fridge 1", "minThreshold": 3, "maxThreshold": 8, "unit": "bags", "createdAt": "2026-03-14", "updatedAt": "2026-03-18" },
+    { "id": "4", "name": "Greek Yogurt", "quantity": 8, "expiryDate": "2026-03-29", "category": "Dairy", "location": "Fridge 1", "minThreshold": 4, "maxThreshold": 12, "unit": "cups", "createdAt": "2026-03-12", "updatedAt": "2026-03-16" },
+    { "id": "5", "name": "Whole Wheat Bread", "quantity": 1, "expiryDate": "2026-03-20", "category": "Bakery", "location": "Pantry Shelf B", "minThreshold": 2, "maxThreshold": 5, "unit": "loaves", "createdAt": "2026-03-15", "updatedAt": "2026-03-19" },
+    { "id": "6", "name": "Cherry Tomatoes", "quantity": 4, "expiryDate": "2026-03-25", "category": "Vegetables", "location": "Fridge 1", "minThreshold": 2, "maxThreshold": 8, "unit": "packs", "createdAt": "2026-03-16", "updatedAt": "2026-03-18" },
+    { "id": "7", "name": "Orange Juice", "quantity": 6, "expiryDate": "2026-03-31", "category": "Beverages", "location": "Fridge 2", "minThreshold": 2, "maxThreshold": 8, "unit": "bottles", "createdAt": "2026-03-09", "updatedAt": "2026-03-17" },
+    { "id": "8", "name": "Lab Ethanol", "quantity": 3, "expiryDate": "2026-06-17", "category": "Lab Supplies", "location": "Storage Room", "minThreshold": 1, "maxThreshold": 5, "unit": "liters", "createdAt": "2026-01-18", "updatedAt": "2026-03-04" },
+    { "id": "9", "name": "Avocados", "quantity": 6, "expiryDate": "2026-03-22", "category": "Produce", "location": "Counter", "minThreshold": 3, "maxThreshold": 10, "unit": "pieces", "createdAt": "2026-03-17", "updatedAt": "2026-03-19" },
+    { "id": "10", "name": "Oat Milk", "quantity": 1, "expiryDate": "2026-03-27", "category": "Dairy Alternatives", "location": "Fridge 2", "minThreshold": 2, "maxThreshold": 6, "unit": "cartons", "createdAt": "2026-03-12", "updatedAt": "2026-03-18" },
+    { "id": "11", "name": "Mixed Salad Greens", "quantity": 2, "expiryDate": "2026-03-18", "category": "Vegetables", "location": "Fridge 1", "minThreshold": 2, "maxThreshold": 6, "unit": "bags", "createdAt": "2026-03-14", "updatedAt": "2026-03-17" },
+    { "id": "12", "name": "Kombucha", "quantity": 10, "expiryDate": "2026-04-08", "category": "Beverages", "location": "Fridge 2", "minThreshold": 4, "maxThreshold": 15, "unit": "bottles", "createdAt": "2026-03-11", "updatedAt": "2026-03-16" }
+  ],
+  "consumptionRecords": [
+    { "id": "101", "itemId": "1", "quantity": -1, "date": "2026-02-19", "reason": "used" },
+    { "id": "102", "itemId": "1", "quantity": -1, "date": "2026-02-26", "reason": "used" },
+    { "id": "103", "itemId": "1", "quantity": -1, "date": "2026-03-05", "reason": "used" },
+    { "id": "104", "itemId": "1", "quantity": -1, "date": "2026-03-12", "reason": "used" },
+    { "id": "105", "itemId": "2", "quantity": -1, "date": "2026-03-09", "reason": "used" },
+    { "id": "106", "itemId": "2", "quantity": -1, "date": "2026-03-14", "reason": "used" },
+    { "id": "107", "itemId": "2", "quantity": -1, "date": "2026-03-17", "reason": "used" },
+    { "id": "108", "itemId": "3", "quantity": -1, "date": "2026-03-16", "reason": "used" },
+    { "id": "109", "itemId": "3", "quantity": -1, "date": "2026-03-18", "reason": "used" },
+    { "id": "110", "itemId": "4", "quantity": -2, "date": "2026-03-14", "reason": "used" },
+    { "id": "111", "itemId": "4", "quantity": -1, "date": "2026-03-17", "reason": "used" },
+    { "id": "112", "itemId": "5", "quantity": -1, "date": "2026-03-17", "reason": "used" },
+    { "id": "113", "itemId": "5", "quantity": -1, "date": "2026-03-18", "reason": "used" },
+    { "id": "114", "itemId": "6", "quantity": -1, "date": "2026-03-17", "reason": "used" },
+    { "id": "115", "itemId": "7", "quantity": -1, "date": "2026-03-12", "reason": "used" },
+    { "id": "116", "itemId": "7", "quantity": -1, "date": "2026-03-16", "reason": "used" },
+    { "id": "117", "itemId": "9", "quantity": -2, "date": "2026-03-18", "reason": "used" },
+    { "id": "118", "itemId": "10", "quantity": -1, "date": "2026-03-15", "reason": "used" },
+    { "id": "119", "itemId": "10", "quantity": -1, "date": "2026-03-18", "reason": "used" },
+    { "id": "120", "itemId": "11", "quantity": -1, "date": "2026-03-16", "reason": "wasted" },
+    { "id": "121", "itemId": "12", "quantity": -2, "date": "2026-03-14", "reason": "used" },
+    { "id": "122", "itemId": "12", "quantity": -1, "date": "2026-03-17", "reason": "used" }
+  ]
+}
