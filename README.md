@@ -1,3 +1,5 @@
+Presentation: https://drive.google.com/file/d/1zei3F99Mi1zB1rAhAmiKAgI3HFQWr8so/view?usp=drive_link
+
 # 🌱 Green-Tech Inventory Assistant
 
 **Candidate:** Varshini M
