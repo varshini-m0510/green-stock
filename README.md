@@ -152,8 +152,9 @@ Given more time, the following enhancements would be prioritized:
 * 🎤 **Voice-based inventory updates**
   * Example: “2 bags of flour used”
 * 📷 **Barcode scanning integration** for faster item entry
-* ☁️ Optional backend for multi-user collaboration and for role based access.
+* ☁️ Backend for multi-user collaboration and for role based access.
 * 📈 Advanced analytics & visualization dashboard
+* 📈 Personalized ML model trained on historical data
 * 🎨 Improved UI/UX for production readiness
 ---
 
