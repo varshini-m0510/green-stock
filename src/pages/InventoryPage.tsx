@@ -3,12 +3,13 @@ import { useInventory } from "@/hooks/useInventory";
 import { Item } from "@/types/inventory";
 import { ExpiryBadge } from "@/components/ExpiryBadge";
 import { ItemForm } from "@/components/ItemForm";
+import { BulkImportDialog } from "@/components/BulkImportDialog";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Plus, Search, Trash2, Pencil, Minus, PlusIcon } from "lucide-react";
+import { Plus, Search, Trash2, Pencil, Minus, PlusIcon, Upload } from "lucide-react";
 import { toast } from "sonner";
 import { getExpiryStatus } from "@/lib/forecasting";
 
@@ -19,6 +20,7 @@ export default function InventoryPage() {
   const [expiryFilter, setExpiryFilter] = useState("all");
   const [sortBy, setSortBy] = useState<"name" | "expiry" | "quantity">("expiry");
   const [formOpen, setFormOpen] = useState(false);
+  const [bulkImportOpen, setBulkImportOpen] = useState(false);
   const [editItem, setEditItem] = useState<Item | undefined>();
   const [deleteTarget, setDeleteTarget] = useState<Item | null>(null);
   const [showDepleted, setShowDepleted] = useState(false);
@@ -52,6 +54,12 @@ export default function InventoryPage() {
   function handleAdd(item: Omit<Item, "id" | "createdAt" | "updatedAt">) {
     addItem(item);
     toast.success(`Added ${item.name}`);
+  }
+
+  function handleBulkImport(items: Omit<Item, "id" | "createdAt" | "updatedAt">[]) {
+    items.forEach((item) => {
+      addItem(item);
+    });
   }
 
   function handleEdit(item: Omit<Item, "id" | "createdAt" | "updatedAt">) {
@@ -90,9 +98,14 @@ export default function InventoryPage() {
     <div className="space-y-6 animate-fade-in">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <h1 className="font-display text-2xl font-bold">Inventory</h1>
-        <Button onClick={() => setFormOpen(true)} className="gap-2">
-          <Plus className="h-4 w-4" /> Add Item
-        </Button>
+        <div className="flex gap-2">
+          <Button onClick={() => setBulkImportOpen(true)} variant="outline" className="gap-2">
+            <Upload className="h-4 w-4" /> Bulk Import
+          </Button>
+          <Button onClick={() => setFormOpen(true)} className="gap-2">
+            <Plus className="h-4 w-4" /> Add Item
+          </Button>
+        </div>
       </div>
 
       {/* Filters */}
@@ -200,6 +213,9 @@ export default function InventoryPage() {
 
       {/* Add Form */}
       <ItemForm open={formOpen} onClose={() => setFormOpen(false)} onSubmit={handleAdd} />
+
+      {/* Bulk Import */}
+      <BulkImportDialog open={bulkImportOpen} onClose={() => setBulkImportOpen(false)} onImport={handleBulkImport} />
 
       {/* Edit Form */}
       {editItem && (
