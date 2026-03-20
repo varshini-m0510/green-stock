@@ -1,4 +1,4 @@
-Presentation: https://drive.google.com/file/d/1zei3F99Mi1zB1rAhAmiKAgI3HFQWr8so/view?usp=drive_link
+Presentation: https://drive.google.com/file/d/1zei3F99Mi1zB1rAhAmiKAgI3HFQWr8so/view?usp=sharing
 
 # 🌱 Green-Tech Inventory Assistant
 
